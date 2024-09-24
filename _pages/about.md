@@ -4,7 +4,7 @@ title: About
 permalink: /
 subtitle: >
   <small>
-    💻 Software Engineer, <a href="https://www.synesisit.com/">Synesis IT PLC</a> <br> 
+    💻 Software Engineer, <a href="https://www.synesisit.com.bd/">Synesis IT PLC</a> <br> 
     🎓 Graduated (B.Sc.) from <a href="https://cse.buet.ac.bd/">CSE, BUET</a> <br>
     👨‍🎓 Prospective Graduate Student <br>
     💡 Interested in <b>Intelligent Transportation Systems</b>, <b>Cyber Physical Systems</b>, and <b>Autonomous Vehicles</b>
