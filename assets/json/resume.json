@@ -29,7 +29,9 @@
       "startDate": "May 2023",
       "endDate": "Jun 2023",
       "location": "Dhaka, Bangladesh",
-      "highlights": ["Worked on an internship project focused on real-life business data analysis through unsupervised clustering by applying natural language processing techniques"]
+      "highlights": [
+        "Worked on an internship project focused on real-life business data analysis through unsupervised clustering by applying natural language processing techniques"
+      ]
     },
     {
       "name": "Synesis IT PLC",
@@ -37,7 +39,10 @@
       "startDate": "Jun 2024",
       "endDate": "present",
       "location": "Dhaka, Bangladesh",
-      "highlights": ["Contributed to the front-end development of Convay, a video conferencing web application", "Analyzed WebRTC statistics to monitor and optimize the performance of meetings"]
+      "highlights": [
+        "Contributed to the front-end development of Convay, a video conferencing web application",
+        "Analyzed WebRTC statistics to monitor and optimize the performance of meetings"
+      ]
     }
   ],
   "volunteer": [
@@ -62,7 +67,10 @@
       "startDate": "Apr 2019",
       "endDate": "Jul 2024",
       "score": "3.67/4.00",
-      "courses": ["Notable Courses: Machine Learning, Microprocessor, Microcontroller & Embedded Systems, Compiler, Computer Networking, Software Engineering, Computer Architecture, Operating System, Simulation & Modelling, Computer Security, Computer Graphics, Artificial Intelligence", "Undergraduate Thesis: Towards Intelligent Traffic Signaling in Dhaka City Based on Vehicle Detection and Congestion Optimization"]
+      "courses": [
+        "Notable Courses: Machine Learning, Microprocessor, Microcontroller & Embedded Systems, Compiler, Computer Networking, Software Engineering, Computer Architecture, Operating System, Simulation & Modelling, Computer Security, Computer Graphics, Artificial Intelligence",
+        "Undergraduate Thesis: Towards Intelligent Traffic Signaling in Dhaka City Based on Vehicle Detection and Congestion Optimization"
+      ]
     }
   ],
   "awards": [
@@ -141,9 +149,7 @@
       "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
     }
   ],
-  "skills": [
-    
-  ],
+  "skills": [],
   "languages": [
     {
       "language": "Bangla",
