@@ -1,8 +1,14 @@
 ---
 layout: about
-title: about me
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: >
+  <small>
+    💻 Software Engineer, <a href="https://www.synesisit.com/">Synesis IT PLC</a> <br> 
+    🎓 Graduated (B.Sc.) from <a href="https://cse.buet.ac.bd/">CSE, BUET</a> <br>
+    👨‍🎓 Prospective Graduate Student <br>
+    💡 Interested in <b>Intelligent Transportation Systems</b>, <b>Cyber Physical Systems</b>, and <b>Autonomous Vehicles</b>
+  </small>
 
 profile:
   align: left
