@@ -21,4 +21,6 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the photo
 ---
 
-I am Ababil (Aa-baa-beel), a fresh graduate from [CSE, BUET](https://cse.buet.ac.bd/). I am currently working as a Software Engineer at [Synesis IT PLC](https://www.synesisit.com.bd/).
+I am Ababil (Aa-baa-beel), and I have recently graduated from **[CSE, BUET](https://cse.buet.ac.bd/)**. I am currently working as a Software Engineer at **[Synesis IT PLC](https://www.synesisit.com.bd/)**.
+
+I am assigned to the Convay team under the Software Development and Implementation department at Synesis IT, where we develop and maintain **[Convay](https://www.convay.com)**, a video conferencing web application which also provides collaborative features.
