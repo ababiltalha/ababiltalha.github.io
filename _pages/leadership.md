@@ -1,10 +1,10 @@
 ---
 layout: profiles
-permalink: /people/
-title: Contact
-description:
+permalink: /leadership/
+title: Leadership
+description: Initiatives and leadership roles taken by me throughout my academic life.
 nav: true
-nav_order: 6
+nav_order: 5
 
 profiles:
   # if you want to include more than one profile, just replicate the following block
