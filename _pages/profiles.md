@@ -3,7 +3,7 @@ layout: profiles
 permalink: /people/
 title: Contact
 description:
-nav: true
+nav: false
 nav_order: 6
 
 profiles:
