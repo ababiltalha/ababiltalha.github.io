@@ -20,14 +20,18 @@ profiles:
     image_circular: false # crops the image to make it circular
   - align: right
     image: #
-    content: about_einstein.md
+    content: projects/ray-tracing.md
     image_circular: false # crops the image to make it circular
   - align: right
     image: #
-    content: about_einstein.md
+    content: projects/asteroids.md
     image_circular: false # crops the image to make it circular
   - align: right
     image: #
-    content: about_einstein.md
+    content: projects/ns-2.md
+    image_circular: false # crops the image to make it circular
+  - align: right
+    image: #
+    content: projects/compiler.md
     image_circular: false # crops the image to make it circular
 ---
