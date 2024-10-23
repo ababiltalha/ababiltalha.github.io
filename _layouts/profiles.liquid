@@ -1,35 +1,11 @@
 ---
 layout: page
 ---
-<div class="post">
-  <article>
-    {% if page.profiles %}
-      {% for profile in page.profiles %}
-        <hr>
-        <div style="margin-bottom: 20px;">
-          {% if profile.title %}
-            <h4>
-              <strong>{{ profile.title }}</strong>
-            </h4>
-          {% endif %}
-          {% if profile.tags %}
-            {% for tag in profile.tags %}
-              <code>{{ tag }}</code>
-            {% endfor %}
-          {% endif %}
-          <br>
-          {% if profile.timeline %}
-            <em>{{ profile.timeline }}</em>
-          {% endif %}
-          <br>
-          {% if profile.links %}
-            {% for link in profile.links %}
-              {% link %}
-            {% endfor %}
-          {% endif %}
-        </div>
-
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  {% if page.profiles %}
+    {% for profile in page.profiles %}
+      <tr>
+        <td style="padding:2.5%;width:25%;vertical-align:top;min-width:120px">
           {% if profile.image %}
             {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
             {% if profile.image_circular %}
@@ -37,23 +13,51 @@ layout: page
             {% else %}
               {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
             {% endif %}
-            {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+            {% capture sizes %}width: auto; height: auto; max-width: 100%;{% endcapture %}
             {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
           {% endif %}
-          {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
+        </td>
+        <td style="padding:2.5%;width:75%;vertical-align:middle">
+          {% if profile.title %}
+            <h5>
+              <strong>{{ profile.title }}</strong>
+            </h5>
           {% endif %}
-        </div>
-
-        <div class="clearfix" style="text-align: justify;">
+          {% if profile.tags %}
+            {% for tag in profile.tags %}
+              <code>
+                <small>{{ tag }}</small>
+              </code>
+            {% endfor %}
+            <br>
+          {% endif %}
+          {% if profile.timeline %}
+            <p style="margin-top:2px;margin-bottom:1px; font-size: 0.8em;">📅 {{ profile.timeline }}</p>
+            <br>
+          {% endif %}
+          {% if profile.links %}
+            {% for link in profile.links %}
+              <p style="margin-top:2px;margin-bottom:1px; font-size: 0.8em;">
+                {% if link.type == 'github' %}
+                  <i class="fab fa-github"></i> <a href="{{link.url}}">Github</a>
+                {% endif %}
+                {% if link.type == 'youtube' %}
+                  <i class="fab fa-youtube"></i> <a href="{{link.url}}">YouTube</a>
+                {% endif %}
+                {% if link.type == 'doi' %}
+                  <i class="fas fa-link"></i> <a href="{{link.url}}">DOI</a>
+                {% endif %}
+              </p>
+            {% endfor %}
+          {% endif %}
           {% if profile.content %}
             {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
             {{ profile_content | markdownify }}
           {% else %}
             {{ content }}
           {% endif %}
-        </div>
-      {% endfor %}
-    {% endif %}
-  </article>
-</div>
+        </td>
+      </tr>
+    {% endfor %}
+  {% endif %}
+</table>
