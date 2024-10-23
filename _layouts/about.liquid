@@ -40,18 +40,15 @@ layout: default
             <div class="contact-icons">{% include social.liquid %}</div>
           </div>
         {% endif %}
+        <!-- News -->
+        {% if page.news and site.announcements.enabled %}
+          <h5 style="margin-top: 20px;">Updates</h5>
+          {% include news.liquid limit=true %}
+        {% endif %}
       </div>
     {% endif %}
 
     <div class="clearfix" style="text-align: justify;">{{ content }}</div>
-
-    <!-- News -->
-    {% if page.news and site.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
 
     <!-- Latest posts -->
     {% if site.latest_posts.enabled %}

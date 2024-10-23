@@ -17,6 +17,30 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+h4 {
+  font-size: 1.1rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.9rem;
+}
+p {
+  text-align: justify;
 }
 
 hr {
