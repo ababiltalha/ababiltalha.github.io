@@ -19,7 +19,7 @@ nav_order: 6
 <a href="https://www.kaggle.com/kaziababilazam">
   <img src="https://img.shields.io/badge/Kaggle-navy?style=flat&logo=kaggle" alt="Kaggle">
 </a>
-<a href="https://youtube.com/@youtube.com/@kaziababilazamtalha">
+<a href="https://www.youtube.com/@kaziababilazamtalha">
   <img src="https://img.shields.io/badge/YouTube-red?style=flat&logo=youtube" alt="YouTube">
 </a>
 <a href="https://discord.com/users/517649005249953794">
