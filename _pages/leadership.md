@@ -16,7 +16,7 @@ profiles:
     image_circular: false
   - align: left
     title: Director of Events, BUET Cyber Security Club
-    tags: ["<a href='https://www.linkedin.com/company/buetsec/'>Link</a>"]
+    tags: ["<a href='https://cse.buet.ac.bd/home/outreach'>Link</a>"]
     timeline: "Jun 2023 - Apr 2024"
     image: leadership/buetsec.jpg
     content: leadership/buetsec.md
