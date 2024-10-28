@@ -22,9 +22,10 @@ layout: default
 
   {% if page.json %}
     {% for category in page.json %}
-      <h3 style="margin-bottom:5px;">
+      <h3 style="margin-bottom:-15px;">
         <strong>{{ category[0] | capitalize }}</strong>
       </h3>
+      <hr>
       {% if category[1].size > 0 %}
         {% case category[0] %}
           {% when 'work' %}
