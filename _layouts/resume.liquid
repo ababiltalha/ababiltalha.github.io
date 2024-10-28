@@ -1,0 +1,71 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <h3 class="post-title">
+      {{ page.title }}
+      {% if page.cv_pdf %}
+        <a
+          href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="float-right"
+          ><i class="fa-regular fa-file-pdf"></i
+        ></a>
+      {% endif %}
+    </h3>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  {% if page.json %}
+    {% for category in page.json %}
+      <h3 style="margin-bottom:-15px;">
+        <strong>{{ category[0] | capitalize }}</strong>
+      </h3>
+      <hr>
+      {% if category[1].size > 0 %}
+        {% case category[0] %}
+          {% when 'work' %}
+            {% for item in category[1] %}
+              <h5>
+                <strong>{{ item.position }}</strong>, {{ item.name }}
+              </h5>
+              <p style="margin-top:2px;margin-bottom:1px; font-size: 0.8em;">
+                📍 {{ item.location }} | 📅 {{ item.startDate }} - {{ item.endDate | default: 'Present' }}
+              </p>
+              <ul style="margin-top:5px; font-size: 0.875em;">
+                {% for highlight in item.highlights %}
+                  <li>{{ highlight }}</li>
+                {% endfor %}
+              </ul>
+            {% endfor %}
+          {% when 'education' %}
+            {% for item in category[1] %}
+              <h5>
+                <strong>{{ item.studyType }}</strong>, {{ item.institution }}
+              </h5>
+              <p style="margin-top:2px;margin-bottom:1px; font-size: 0.8em;">
+                📍 {{ item.location }} | 📅 {{ item.startDate }} - {{ item.endDate }} | CGPA: {{ item.cgpa }}
+              </p>
+              {% if item.courses %}
+                <ul style="margin-top:5px; font-size: 0.875em;">
+                  {% for course in item.courses %}
+                    <li>{{ course }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            {% endfor %}
+          {% when 'languages' %}
+            <ul>
+              {% for item in category[1] %}
+                <li>{{ item.language }} ({{ item.fluency }})</li>
+              {% endfor %}
+            </ul>
+        {% endcase %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+</div>

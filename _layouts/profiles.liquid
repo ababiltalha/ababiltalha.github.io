@@ -25,11 +25,11 @@ layout: page
           {% endif %}
           {% if profile.tags %}
             {% for tag in profile.tags %}
-              <code>
-                <small>{{ tag }}</small>
-              </code>
+              <small>
+                <code>{{ tag }}</code>
+              </small>
             {% endfor %}
-            <br>
+            <div style="margin-bottom: 10px;"></div>
           {% endif %}
           {% if profile.timeline %}
             <p style="margin-top:2px;margin-bottom:1px; font-size: 0.8em;">📅 {{ profile.timeline }}</p>
