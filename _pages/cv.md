@@ -37,7 +37,6 @@ json:
         {
           "institution": "Bangladesh University of Engineering & Technology",
           "location": "Dhaka, Bangladesh",
-          "url": "https://buet.ac.bd/",
           "studyType": "Bachelor of Science (BSc) in Computer Science & Engineering (CSE)",
           "startDate": "Apr 2019",
           "endDate": "Jul 2024",
