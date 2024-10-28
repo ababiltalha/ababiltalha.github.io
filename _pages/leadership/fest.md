@@ -1,0 +1,1 @@
+A proud part of the organizing team of BUET CSE Fest 2023, the 2023 edition of the annual departmental festival consisting inter-university competitions such as hackathon, programming contest, deep learning competition, CTF competition and extra-curricular events such as cultural program, dance mob, treasure hunt, indoor and outdoor games.
