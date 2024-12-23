@@ -12,13 +12,13 @@ profiles:
   # add the relevant image in assets/img/
   - title: SyncInc
     tags: ["Django", "React", "MUI", "PostgreSQL", "Software Development"]
-    image: syncinc-dark.webp
+    image: projects/syncinc-dark.webp
     links:
       - type: github
         url: https://github.com/fardinanam/SyncInc
     content: projects/syncinc.md
     image_circular: false
-  - title: Contradictory, My Dear Watson: Extended
+  - title: Contradictory, My Dear Watson (Extended)
     tags: ["Python", "Machine Learning", "Natural Language Inference"]
     image: #
     links:
@@ -28,7 +28,7 @@ profiles:
     image_circular: false
   - title: Laser Security System With Arduino
     tags: ["Arduino", "Embedded Systems"]
-    image: laser-security-system.webp
+    image: projects/laser-security-system.webp
     links:
       - type: github
         url: https://github.com/fardinanam/Laser-Security-System-With-Arduino
@@ -38,7 +38,7 @@ profiles:
     image_circular: false
   - title: Ray Tracing and Illumination Using OpenGL
     tags: ["OpenGL", "C++", "Computer Graphics"]
-    image: ray-tracing.bmp
+    image: projects/ray-tracing.bmp
     content: projects/ray-tracing.md
     image_circular: false
     links:
@@ -46,7 +46,7 @@ profiles:
         url: https://github.com/ababiltalha/CSE410_graphics
   - title: Asteroids
     tags: ["p5.js"]
-    image: game_level_1.gif
+    image: projects/game_level_1.gif
     links:
       - type: github
         url: https://github.com/RazinReaz/GameJam-2023-Asteroids
@@ -62,7 +62,7 @@ profiles:
     image_circular: false
   - title: Compiler
     tags: ["Bison", "Flex", "Compiler"]
-    image: compiler.webp
+    image: projects/compiler.webp
     links:
       - type: github
         url: https://github.com/ababiltalha/CSE310_compiler
