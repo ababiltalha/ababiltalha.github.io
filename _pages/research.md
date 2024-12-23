@@ -21,7 +21,7 @@ profiles:
     title: Evaluation Metrics for Generative Pedestrian Crossing Models in Simulation
     tags: ["Autonomous Vehicles", "Data Analysis", "Simulation"]
     timeline: "Jun 2023 - Present"
-    image: #
+    image: research/scene-coordinate-system.png
     content: research/evaluation_metrics.md
     image_circular: false # crops the image to make it circular
   - align: left
