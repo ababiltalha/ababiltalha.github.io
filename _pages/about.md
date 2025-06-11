@@ -16,7 +16,7 @@ social: true # includes social icons at the bottom of the photo
 ---
 
 <small>
-  💻 Software Engineer, Synesis IT PLC <br> 
+  💻 Software Engineer I, Synesis IT PLC <br> 
   🎓 Graduated (BSc) from CSE, BUET <br>
   👨‍🎓 Prospective Graduate Student <br>
   🚦 Interested in <b>Intelligent Transportation Systems</b>, <b>Cyber-Physical Systems</b>, and <b>Autonomous Vehicles</b>

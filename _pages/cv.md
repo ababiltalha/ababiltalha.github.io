@@ -13,7 +13,7 @@ json:
       [
         {
           "name": "Synesis IT PLC",
-          "position": "Software Engineer",
+          "position": "Software Engineer I",
           "startDate": "Jun 2024",
           "location": "Dhaka, Bangladesh",
           "highlights":
