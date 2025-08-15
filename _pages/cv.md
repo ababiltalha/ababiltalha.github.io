@@ -4,7 +4,7 @@ permalink: /resume/
 title: Resume
 nav: true
 nav_order: 4
-cv_pdf: Azam_Kazi Ababil_resume.pdf
+cv_pdf: Kazi_Ababil_Azam_CV.pdf
 description: >
   You can download my resume in PDF format by clicking the button on the right.
 json:
@@ -13,7 +13,7 @@ json:
       [
         {
           "name": "Synesis IT PLC",
-          "position": "Software Engineer",
+          "position": "Software Engineer I",
           "startDate": "Jun 2024",
           "location": "Dhaka, Bangladesh",
           "highlights":
