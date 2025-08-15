@@ -132,16 +132,17 @@ main {
     padding: 2rem;
 }
 
-/* Page content styles */
-.page-title {
+/* Legacy page content styles - no longer used, all pages use about-title now */
+/* .page-title {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     color: var(--color-header);
     border-bottom: 2px solid var(--color-highlight);
     padding-bottom: 0.5rem;
-}
+} */
 
-.page-section {
+/* Legacy page-section styles - no longer used, all pages use about-bio structure now */
+/* .page-section {
     margin-bottom: 2rem;
 }
 
@@ -171,16 +172,16 @@ main {
 
 .page-section li {
     margin-bottom: 0.5rem;
-}
+} */
 
 /* General text links styling */
-p a, .about-bio a, .page-section a {
+p a, .page-bio a {
     color: var(--color-highlight);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-p a:hover, .about-bio a:hover, .page-section a:hover {
+p a:hover, .page-bio a:hover {
     color: var(--color-highlight);
     text-decoration: underline;
 }
@@ -198,24 +199,24 @@ footer p {
     font-size: 0.9rem;
 }
 
-/* About Page Styles */
-.about-container {
+/* Page Styles */
+.page-container {
     /* max-width: 1000px; */
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.about-content {
+.page-content {
     display: flex;
     gap: 3rem;
     align-items: flex-start;
 }
 
-.about-text {
+.page-text {
     flex: 2;
 }
 
-.about-title {
+.page-title {
     font-size: 2rem;
     color: var(--color-text);
     margin-bottom: 1rem;
@@ -224,13 +225,13 @@ footer p {
     font-weight: bold;
 }
 
-.about-bio {
+.page-bio {
     font-size: 1rem;
     line-height: 1.5;
     color: var(--color-text);
 }
 
-.about-bio p {
+.page-bio p {
     margin-bottom: 1.25rem;
 }
 
@@ -291,6 +292,89 @@ footer p {
     font-weight: normal;
 }
 
+/* Research Page Styles */
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1200px) {
+    .research-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.research-card {
+    background-color: var(--color-background);
+    border: 2px solid var(--color-contrast);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.research-card:hover {
+    background-color: #c8ced2;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.research-card-image {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    background-color: #f0f0f0;
+    border: 1px solid var(--color-contrast);
+}
+
+.research-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.research-card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.research-card-timeline {
+    font-size: 0.9rem;
+    color: var(--color-highlight);
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+}
+
+.research-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.research-tag {
+    background-color: var(--color-highlight);
+    color: var(--color-white);
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.research-card-description {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    line-height: 1.4;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .nav-container {
@@ -313,19 +397,15 @@ footer p {
         margin: 0.5rem 0;
     }
     
-    .page-title {
-        font-size: 1.5rem;
-    }
-    
-    /* About page responsive */
-    .about-content {
+    /* Page responsive */
+    .page-content {
         flex-direction: column;
         gap: 2rem;
         text-align: center;
     }
     
-    .about-title {
-        font-size: 2rem;
+    .page-title {
+        font-size: 1.5rem;
     }
     
     .profile-image {
@@ -337,6 +417,20 @@ footer p {
         font-size: 0.7rem;
         gap: 0.2rem;
         max-width: 200px;
+    }
+    
+    /* Research responsive */
+    .research-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .research-card {
+        padding: 1rem;
+    }
+    
+    .research-card-image {
+        height: 150px;
     }
 }
 

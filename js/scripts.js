@@ -90,7 +90,7 @@ async function loadPageContent(pageKey) {
                 content = await generateHomePage(pageData);
                 break;
             case 'research':
-                content = generateResearchPage(pageData);
+                content = await generateResearchPage(pageData);
                 break;
             case 'work':
                 content = generateWorkPage(pageData);
@@ -143,11 +143,11 @@ async function generateHomePage(data) {
         console.error('Error loading about layout:', error);
         // Fallback content
         return `
-            <div class="about-container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h1 class="about-title">About Me</h1>
-                        <div class="about-bio">
+            <div class="page-container">
+                <div class="page-content">
+                    <div class="page-text">
+                        <h1 class="page-title">About Me</h1>
+                        <div class="page-bio">
                             <p>${data.content?.bio || 'Welcome to my personal website.'}</p>
                         </div>
                     </div>
@@ -157,72 +157,151 @@ async function generateHomePage(data) {
     }
 }
 
-function generateResearchPage(data) {
-    return `
-        <h1 class="page-title">Research Experience</h1>
-        <div class="page-section">
-            <p>This page will showcase my research experience and academic work.</p>
-            <p><em>Content will be added here...</em></p>
-        </div>
-    `;
+async function generateResearchPage(data) {
+    try {
+        // Load the research layout template
+        const response = await fetch('layouts/research/research.html');
+        let template = await response.text();
+        
+        // Generate project cards
+        let projectsHtml = '';
+        if (data.content && data.content.projects) {
+            projectsHtml = data.content.projects.map(project => {
+                const imageSrc = project.image === '#' ? 'assets/images/empty.jpg' : project.image;
+                const tagsHtml = project.tags.map(tag => 
+                    `<span class="research-tag">${tag}</span>`
+                ).join('');
+                
+                return `
+                    <div class="research-card">
+                        <div class="research-card-image">
+                            <img src="${imageSrc}" alt="${project.title}" />
+                        </div>
+                        <h3 class="research-card-title">${project.title}</h3>
+                        <div class="research-card-timeline">${project.timeline}</div>
+                        <div class="research-card-tags">
+                            ${tagsHtml}
+                        </div>
+                        <p class="research-card-description">${project.description}</p>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        // Replace template variables
+        template = template.replace('{{projects}}', projectsHtml);
+        
+        return template;
+    } catch (error) {
+        console.error('Error loading research layout:', error);
+        // Fallback content
+        return `
+            <div class="page-container">
+                <div class="page-content">
+                    <div class="page-text">
+                        <h1 class="page-title">Research Experience</h1>
+                        <div class="page-bio">
+                            <p>Error loading research projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
 }
 
 function generateWorkPage(data) {
     return `
-        <h1 class="page-title">Professional Experience</h1>
-        <div class="page-section">
-            <p>This page will detail my professional work experience and career history.</p>
-            <p><em>Content will be added here...</em></p>
+        <div class="page-container">
+            <div class="page-content">
+                <div class="page-text">
+                    <h1 class="page-title">Professional Experience</h1>
+                    <div class="page-bio">
+                        <p>This page will detail my professional work experience and career history.</p>
+                        <p><em>Content will be added here...</em></p>
+                    </div>
+                </div>
+            </div>
         </div>
     `;
 }
 
 function generateEducationPage(data) {
     return `
-        <h1 class="page-title">Academic History</h1>
-        <div class="page-section">
-            <p>This page will contain my educational background and academic achievements.</p>
-            <p><em>Content will be added here...</em></p>
+        <div class="page-container">
+            <div class="page-content">
+                <div class="page-text">
+                    <h1 class="page-title">Academic History</h1>
+                    <div class="page-bio">
+                        <p>This page will contain my educational background and academic achievements.</p>
+                        <p><em>Content will be added here...</em></p>
+                    </div>
+                </div>
+            </div>
         </div>
     `;
 }
 
 function generateProjectsPage(data) {
     return `
-        <h1 class="page-title">Projects</h1>
-        <div class="page-section">
-            <p>This page will showcase my various projects and technical work.</p>
-            <p><em>Content will be added here...</em></p>
+        <div class="page-container">
+            <div class="page-content">
+                <div class="page-text">
+                    <h1 class="page-title">Projects</h1>
+                    <div class="page-bio">
+                        <p>This page will showcase my various projects and technical work.</p>
+                        <p><em>Content will be added here...</em></p>
+                    </div>
+                </div>
+            </div>
         </div>
     `;
 }
 
 function generateLeadershipPage(data) {
     return `
-        <h1 class="page-title">Leadership</h1>
-        <div class="page-section">
-            <p>This page will highlight my leadership experience and roles.</p>
-            <p><em>Content will be added here...</em></p>
+        <div class="page-container">
+            <div class="page-content">
+                <div class="page-text">
+                    <h1 class="page-title">Leadership</h1>
+                    <div class="page-bio">
+                        <p>This page will highlight my leadership experience and roles.</p>
+                        <p><em>Content will be added here...</em></p>
+                    </div>
+                </div>
+            </div>
         </div>
     `;
 }
 
 function generateMiscellaneousPage(data) {
     return `
-        <h1 class="page-title">Miscellaneous</h1>
-        <div class="page-section">
-            <p>This page will contain additional information and miscellaneous content.</p>
-            <p><em>Content will be added here...</em></p>
+        <div class="page-container">
+            <div class="page-content">
+                <div class="page-text">
+                    <h1 class="page-title">Miscellaneous</h1>
+                    <div class="page-bio">
+                        <p>This page will contain additional information and miscellaneous content.</p>
+                        <p><em>Content will be added here...</em></p>
+                    </div>
+                </div>
+            </div>
         </div>
     `;
 }
 
 function generateDefaultPage(title, data) {
     return `
-        <h1 class="page-title">${title}</h1>
-        <div class="page-section">
-            <p>This page is under construction.</p>
-            <p><em>Content will be added here...</em></p>
+        <div class="page-container">
+            <div class="page-content">
+                <div class="page-text">
+                    <h1 class="page-title">${title}</h1>
+                    <div class="page-bio">
+                        <p>This page is under construction.</p>
+                        <p><em>Content will be added here...</em></p>
+                    </div>
+                </div>
+            </div>
         </div>
     `;
 }

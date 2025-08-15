@@ -92,7 +92,45 @@ const SITE_DATA = {
   },
   research: {
     title: "Research Experience",
-    content: {}
+    content: {
+      projects: [
+        {
+          title: "Investigating Data Privacy in AI Chatbots",
+          tags: ["Data Privacy", "NLP", "Human-AI Interaction"],
+          timeline: "May 2025 - Present",
+          image: "#",
+          description: "Description of Project 1"
+        },
+        {
+          title: "Evaluating Reasoning in Large Language Models",
+          tags: ["LLMs", "Simulation", "Reasoning"],
+          timeline: "Jun 2025 - Present",
+          image: "#",
+          description: "Description of Project 2"
+        },
+        {
+          title: "Pedestrian Trajectory Categorization and Analysis in AV Simulation",
+          tags: ["AV", "Data Analysis", "Simulation"],
+          timeline: "Jun 2024 - Present",
+          image: "#",
+          description: "Description of Project 3"
+        },
+        {
+          title: "Towards Intelligent Traffic Signaling in Dhaka City Based on Vehicle Detection and Congestion Optimization",
+          tags: ["Intelligent Traffic Signaling", "Object Detection", "MOO", "CPS"],
+          timeline: "Jun 2023 - Jun 2024",
+          image: "#",
+          description: "Description of Project 4"
+        },
+        {
+          title: "NHT1071: A Traffic Image Dataset for Non lane-based and Heterogeneous Traffic for Adaptive Traffic Signal Scheduling",
+          tags: ["Traffic Image Dataset", "Object Detection", "Intelligent Traffic Signaling"],
+          timeline: "Jun 2023 - May 2024",
+          image: "#",
+          description: "Description of Project 5"
+        }
+      ]
+    }
   },
   work: {
     title: "Professional Experience",
