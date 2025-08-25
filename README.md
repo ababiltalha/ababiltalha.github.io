@@ -9,3 +9,4 @@ Run the following command to start the server (while in the root directory of th
 ```bash
 python -m http.server 8000
 ```
+<!-- !TODO: Need to add MIT License, Need to add Achievements page -->

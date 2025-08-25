@@ -93,7 +93,7 @@ async function loadPageContent(pageKey) {
                 content = await generateResearchPage(pageData);
                 break;
             case 'work':
-                content = generateWorkPage(pageData);
+                content = await generateWorkPage(pageData);
                 break;
             case 'education':
                 content = generateEducationPage(pageData);
@@ -210,20 +210,69 @@ async function generateResearchPage(data) {
     }
 }
 
-function generateWorkPage(data) {
-    return `
-        <div class="page-container">
-            <div class="page-content">
-                <div class="page-text">
-                    <h1 class="page-title">Professional Experience</h1>
-                    <div class="page-bio">
-                        <p>This page will detail my professional work experience and career history.</p>
-                        <p><em>Content will be added here...</em></p>
+async function generateWorkPage(data) {
+    try {
+        // Load the work layout template
+        const response = await fetch('layouts/work/work.html');
+        let template = await response.text();
+        
+        // Generate experience cards
+        let experiencesHtml = '';
+        if (data.content && data.content.experiences) {
+            experiencesHtml = data.content.experiences.map(experience => {
+                const duration = experience.endDate === 'Present' 
+                    ? `${experience.startDate} - Present`
+                    : `${experience.startDate} - ${experience.endDate}`;
+                
+                const highlightsHtml = experience.highlights.map(highlight => 
+                    `<li>${highlight}</li>`
+                ).join('');
+                
+                const logoSrc = experience.image && experience.image !== '#' 
+                    ? experience.image 
+                    : 'assets/images/empty.jpg';
+                
+                return `
+                    <div class="work-card">
+                        <div class="work-logo">
+                            <img src="${logoSrc}" alt="${experience.company}" />
+                        </div>
+                        <div class="work-content">
+                            <div class="work-header">
+                                <h3 class="work-position">${experience.position}</h3>
+                                <div class="work-company">${experience.company}</div>
+                                <div class="work-location">${experience.location}</div>
+                            </div>
+                            <div class="work-duration">${duration}</div>
+                            <ul class="work-highlights">
+                                ${highlightsHtml}
+                            </ul>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        // Replace template variables
+        template = template.replace('{{experiences}}', experiencesHtml);
+        
+        return template;
+    } catch (error) {
+        console.error('Error loading work layout:', error);
+        // Fallback content
+        return `
+            <div class="page-container">
+                <div class="page-content">
+                    <div class="page-text">
+                        <h1 class="page-title">Professional Experience</h1>
+                        <div class="page-bio">
+                            <p>Error loading work experiences.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    `;
+        `;
+    }
 }
 
 function generateEducationPage(data) {

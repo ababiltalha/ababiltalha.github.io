@@ -1,14 +1,6 @@
-// Portfolio Website Configuration
-// Easily enable/disable pages and add new ones here
-
 const SITE_CONFIG = {
-    // Site Information
     siteName: "Kazi Ababil Azam | Personal Website",
     author: "Kazi Ababil Azam",
-    
-    // Page Configuration
-    // Set enabled: false to hide a page from navigation
-    // Add new pages by adding entries here
     pages: {
         home: {
             enabled: true,
@@ -62,7 +54,6 @@ const SITE_CONFIG = {
     }
 };
 
-// Helper function to get enabled pages sorted by order
 function getEnabledPages() {
     return Object.entries(SITE_CONFIG.pages)
         .filter(([key, page]) => page.enabled)
@@ -70,7 +61,6 @@ function getEnabledPages() {
         .map(([key, page]) => ({ key, ...page }));
 }
 
-// Export for use in other files
 window.SITE_CONFIG = SITE_CONFIG;
 window.getEnabledPages = getEnabledPages;
 
@@ -134,7 +124,34 @@ const SITE_DATA = {
   },
   work: {
     title: "Professional Experience",
-    content: {}
+    content: {
+      experiences: [
+        {
+          position: "Software Engineer I",
+          company: "Synesis IT PLC",
+          startDate: "Jun 2024",
+          endDate: "Present",
+          location: "Dhaka, Bangladesh",
+          image: "assets/images/synesis.png",
+          highlights: [
+            "Implementing and improving annotation feature for Convay, a video conferencing web application",
+            "Developing and maintaining the desktop application for Convay, and migrating features from web version for seamless experience",
+            "Implemented real-time analytical features to monitor meeting performance",
+          ],
+        },
+        {
+          position: "Project Intern",
+          company: "ERA InfoTech Limited",
+          startDate: "May 2023",
+          endDate: "Jun 2023",
+          location: "Dhaka, Bangladesh",
+          image: "assets/images/era.png",
+          highlights: [
+            "Analyzed business data using clustering methods enhanced by natural language processing techniques",
+          ],
+        },
+      ],
+    }
   },
   education: {
     title: "Academic History",
@@ -154,5 +171,4 @@ const SITE_DATA = {
   }
 };
 
-// Export SITE_DATA after it's defined
 window.SITE_DATA = SITE_DATA;
