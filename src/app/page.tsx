@@ -111,7 +111,7 @@ export default function Home() {
                     experienceData.length > 0 && (
                       <section key={sectionName} id={sectionName} className="scroll-mt-28">
                         <h2 className="font-serif font-bold text-xl mb-12 tracking-wide uppercase">
-                          Experience
+                          Professional Experience
                         </h2>
                         <div className="space-y-12">
                           {experienceData.map((experience, index) => (
@@ -144,7 +144,7 @@ export default function Home() {
                     researchProjectsData.length > 0 && (
                       <section key={sectionName} id={sectionName} className="scroll-mt-28">
                         <h2 className="font-serif font-bold text-xl mb-12 tracking-wide uppercase">
-                          Research Projects
+                          Research Experience
                         </h2>
                         <div className="space-y-12">
                           {researchProjectsData.map((researchProjects, index) => (
@@ -159,7 +159,7 @@ export default function Home() {
                     leadershipData.length > 0 && (
                       <section key={sectionName} id={sectionName} className="scroll-mt-28">
                         <h2 className="font-serif font-bold text-xl mb-12 tracking-wide uppercase">
-                          Leadership
+                          Leadership Roles
                         </h2>
                         <div className="space-y-12">
                           {leadershipData.map((leadership, index) => (

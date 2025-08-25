@@ -32,6 +32,8 @@ export function Navbar({ sections }: NavbarProps) {
         return "Publications";
       case Section.News:
         return "News";
+      case Section.Leadership:
+        return "Leadership";
       default:
         return section;
     }
