@@ -39,7 +39,7 @@ export function ResearchProjectsEntry({ researchProjects }: { researchProjects: 
             {researchProjects.technologies.map((tech, index) => (
               <span
                 key={index}
-                className="text-xs text-zinc-600 px-2 py-1 bg-zinc-100 rounded-full"
+                className="text-xs text-zinc-600 dark:text-zinc-300 px-2 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full"
               >
                 {tech}
               </span>
@@ -51,7 +51,7 @@ export function ResearchProjectsEntry({ researchProjects }: { researchProjects: 
           {researchProjects.projectUrl && (
             <a
               href={researchProjects.projectUrl}
-              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
+              className="group inline-flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-300"
             >
               <ArrowUpRight
                 size={12}
@@ -63,7 +63,7 @@ export function ResearchProjectsEntry({ researchProjects }: { researchProjects: 
           {researchProjects.codeUrl && (
             <a
               href={researchProjects.codeUrl}
-              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
+              className="group inline-flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-300"
             >
               <ArrowUpRight
                 size={12}

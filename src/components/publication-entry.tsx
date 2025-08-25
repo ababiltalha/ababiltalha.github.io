@@ -40,7 +40,7 @@ export function PublicationEntry({
           {publication.paperUrl && (
             <a
               href={publication.paperUrl}
-              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
+              className="group inline-flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-300"
             >
               <ArrowUpRight
                 size={12}
@@ -52,7 +52,7 @@ export function PublicationEntry({
           {publication.codeUrl && (
             <a
               href={publication.codeUrl}
-              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
+              className="group inline-flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-300"
             >
               <ArrowUpRight
                 size={12}
@@ -64,7 +64,7 @@ export function PublicationEntry({
           {publication.bibtex && (
             <a
               href={publication.bibtex}
-              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
+              className="group inline-flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-300"
             >
               <ArrowUpRight
                 size={12}
