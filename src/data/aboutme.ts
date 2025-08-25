@@ -34,6 +34,6 @@ export const aboutMe: AboutMe = {
   // blogUrl: "https://",
   cvUrl: "/assets/pdf/cv.pdf",
   institutionUrl: "https://synesisitltd.com/",
-  altName: "Aspiring PhD Applicant",
-  // secretDescription: "I like dogs.",
+  altName: "Prospective PhD Student",
+  secretDescription: "Cristiano Ronaldo dos Santos Aveiro is the greatest footballer of all time.",
 };

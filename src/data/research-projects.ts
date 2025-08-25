@@ -18,9 +18,7 @@ export const researchProjectsData: ResearchProjects[] = [
     technologies: ["Data Privacy", "NLP", "Human-AI Interaction"],
     supervisors: ["Dr. Dipto Das", "Dr. Imtiaz Karim"],
     supervisorLinks: ["https://scholar.google.com/citations?hl=en&user=yRHRA4QAAAAJ", "https://scholar.google.com/citations?user=YqQRjfgAAAAJ&hl=en"],
-    // projectUrl: "https://project-demo.com",
-    // imageUrl: "/assets/images/research-projects/data-privacy.png",
-    // codeUrl: "https://github.com/username/project",
+    imageUrl: "/assets/images/research-projects/methodology-1.png",
   },
   {
     title: "Evaluating Reasoning in Large Language Models",
@@ -29,7 +27,7 @@ export const researchProjectsData: ResearchProjects[] = [
     technologies: ["LLMs", "Reasoning", "CoT"],
     supervisors: ["Dr. Golam Md Muktadir"],
     supervisorLinks: ["https://scholar.google.com/citations?user=RDa4TOgAAAAJ&hl=en"],
-    // imageUrl: "/assets/images/research-projects/reasoning.png",
+    imageUrl: "/assets/images/research-projects/performance.png",
   },
   {
     title: "Pedestrian Trajectory Categorization and Analysis in AV Simulation",
@@ -38,7 +36,7 @@ export const researchProjectsData: ResearchProjects[] = [
     technologies: ["AV", "Data Analysis", "Visualization"],
     supervisors: ["Dr. Golam Md. Muktadir", "Dr. A. B. M. Alim Al Islam", "Dr. Mahmuda Naznin"],
     supervisorLinks: ["https://scholar.google.com/citations?user=RDa4TOgAAAAJ&hl=en", "https://scholar.google.com/citations?user=K-AIPzQAAAAJ&hl=en", "https://scholar.google.com/citations?user=dJx58AQAAAAJ&hl=en"],
-    // imageUrl: "/assets/images/research-projects/pedestrian-trajectory.png",
+    imageUrl: "/assets/images/research-projects/annotation.png",
   },
   {
     title: "Towards Intelligent Traffic Signaling in Dhaka City Based on Vehicle Detection and Congestion Optimization",
@@ -47,7 +45,7 @@ export const researchProjectsData: ResearchProjects[] = [
     technologies: ["Intelligent Traffic Signaling", "Real-Time Video Processing", "Object Detection", "Multi-Objective Optimization", "Cyber-Physical Systems"],
     supervisors: ["Dr. A. B. M. Alim Al Islam"],
     supervisorLinks: ["https://scholar.google.com/citations?user=K-AIPzQAAAAJ&hl=en"],
-    // imageUrl: "/assets/images/research-projects/traffic-signaling.png",
+    imageUrl: "/assets/images/research-projects/system-architecture-1.png",
   },
   {
     title: "NHT1071: A Traffic Image Dataset for Non lane-based and Heterogeneous Traffic for Adaptive Traffic Signal Scheduling",
@@ -56,7 +54,7 @@ export const researchProjectsData: ResearchProjects[] = [
     technologies: ["Traffic Image Dataset", "Object Detection", "Intelligent Traffic Signaling"],
     supervisors: ["Masfiqur Rahaman", "Dr. A. B. M. Alim Al Islam"],
     supervisorLinks: ["https://scholar.google.com/citations?user=kO1x10QAAAAJ&hl=en", "https://scholar.google.com/citations?user=K-AIPzQAAAAJ&hl=en"],
-    // imageUrl: "/assets/images/research-projects/traffic-image-dataset.png",
+    imageUrl: "/assets/images/research-projects/nht.png",
   }
   
 ];

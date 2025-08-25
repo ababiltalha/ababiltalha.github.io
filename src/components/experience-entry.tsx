@@ -5,7 +5,7 @@ export function ExperienceEntry({ experience }: { experience: Experience }) {
     <div className="grid grid-cols-4 gap-x-2">
       <span className="text-xs text-zinc-500 mt-1">
         {experience.date}
-        <br/><br/>
+        <br/>
         {experience.location && experience.location}
       </span>
       <div className="col-span-3 flex flex-col">
@@ -25,17 +25,17 @@ export function ExperienceEntry({ experience }: { experience: Experience }) {
           )}
         </h3>
         {experience.advisor && (
-          <p className="text-sm text-zinc-600 leading-relaxed italic mt-2">
+          <p className="text-sm text-zinc-500 mt-2 italic">
             Advisor: {experience.advisor}
           </p>
         )}
         {experience.manager && (
-          <p className="text-sm text-zinc-600 leading-relaxed italic mt-2">
+          <p className="text-sm text-zinc-500 mt-2 italic">
             Manager: {experience.manager}
           </p>
         )}
         {experience.description && (
-          <p className="text-sm text-zinc-600 leading-relaxed mt-2">
+          <p className="text-sm text-zinc-500 mt-2 italic">
             {experience.description}
           </p>
         )}

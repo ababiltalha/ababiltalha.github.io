@@ -23,7 +23,7 @@ export const portfolioData: Portfolio[] = [
     description:
       "A project extended from a Kaggle competition to detect contradictions in multilingual text data, including Bangla text, through rigorous preprocessing and fine-tuning.",
     technologies: ["Python", "Machine Learning", "Natural Language Inference"],
-    // imageUrl: 
+    imageUrl: "/assets/images/portfolio/contra.png",
     codeUrl: "https://github.com/ababiltalha/CSE472_MycroftOrMoriarty",
   },
   {
@@ -66,7 +66,7 @@ export const portfolioData: Portfolio[] = [
     description:
       "Built a compiler from scratch including steps for creating a symbol table, building a lexical analyzer, semantic analyzer, and generating intermediate code.",
     technologies: ["Bison", "Flex", "Compiler"],
-    imageUrl: "/assets/images/portfolio/compiler.webp",
+    // imageUrl: "/assets/images/portfolio/compiler.webp",
     codeUrl: "https://github.com/ababiltalha/CSE310_compiler",
   },
 ];

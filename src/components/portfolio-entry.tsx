@@ -13,6 +13,7 @@ export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
             width={160}
             height={200}
             className="rounded-lg"
+            unoptimized={portfolio.imageUrl.includes('game_level_1.jpg')}
           />
         </div>
       )}

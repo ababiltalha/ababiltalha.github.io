@@ -14,6 +14,8 @@ import { ResearchProjectsEntry } from "@/components/research-projects-entry";
 import { researchProjectsData } from "@/data/research-projects";
 import { sectionOrder, Section } from "@/data/section-order";
 import { Navbar } from "@/components/navbar";
+import { LeadershipEntry } from "@/components/leadership-entry";
+import { leadershipData } from "@/data/leadership";
 
 export default function Home() {
   return (
@@ -147,6 +149,21 @@ export default function Home() {
                         <div className="space-y-12">
                           {researchProjectsData.map((researchProjects, index) => (
                             <ResearchProjectsEntry key={index} researchProjects={researchProjects} />
+                          ))}
+                        </div>
+                      </section>
+                    )
+                  );
+                case Section.Leadership:
+                  return (
+                    leadershipData.length > 0 && (
+                      <section key={sectionName} id={sectionName} className="scroll-mt-28">
+                        <h2 className="font-serif font-bold text-xl mb-12 tracking-wide uppercase">
+                          Leadership
+                        </h2>
+                        <div className="space-y-12">
+                          {leadershipData.map((leadership, index) => (
+                            <LeadershipEntry key={index} leadership={leadership} />
                           ))}
                         </div>
                       </section>

@@ -9,12 +9,12 @@ export function EducationEntry({ education }: { education: Education }) {
           <h3 className="text-base mb-1 font-serif">{education.institution}</h3>
           <p className="text-sm text-zinc-600">{education.degree}</p>
           {education.cgpa && (
-            <p className="text-sm text-zinc-500 mt-2 italic">
+            <p className="text-sm text-zinc-600 leading-relaxed mt-2">
               CGPA: {education.cgpa}
             </p>
           )}
           {education.notableCourses && (
-            <p className="text-sm text-zinc-500 mt-2 italic">
+            <p className="text-sm text-zinc-600 leading-relaxed mt-2">
               Notable Courses: {education.notableCourses}
             </p>
           )}

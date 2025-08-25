@@ -77,12 +77,12 @@ export function ResearchProjectsEntry({ researchProjects }: { researchProjects: 
         {researchProjects.supervisors && (
           <p className="text-sm text-zinc-600 leading-relaxed italic mt-2">
             Supervisors: {researchProjects.supervisors.map((supervisor, index) => (
-              <>
+              <span key={index}>
                 <a href={researchProjects.supervisorLinks?.[index]} className="hover:text-zinc-600 hover:underline transition-colors" target="_blank" rel="noopener noreferrer">
                   {supervisor}
                 </a>
                 {index < (researchProjects.supervisors?.length ?? 0) - 1 && ", "}
-              </>
+              </span>
             ))}
           </p>
         )}
