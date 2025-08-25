@@ -10,6 +10,8 @@ import { ExperienceEntry } from "@/components/experience-entry";
 import { experienceData } from "@/data/experience";
 import { PortfolioEntry } from "@/components/portfolio-entry";
 import { portfolioData } from "@/data/portfolio";
+import { ResearchProjectsEntry } from "@/components/research-projects-entry";
+import { researchProjectsData } from "@/data/research-projects";
 import { sectionOrder, Section } from "@/data/section-order";
 
 export default function Home() {
@@ -47,7 +49,7 @@ export default function Home() {
                   return (
                     newsData.length > 0 && (
                       <section key={sectionName}>
-                        <h2 className="font-serif text-l mb-12 tracking-wide uppercase">
+                        <h2 className="font-serif font-bold text-xl mb-12 tracking-wide uppercase">
                           News
                         </h2>
                         <div className="space-y-12">
@@ -64,7 +66,7 @@ export default function Home() {
                   return (
                     educationData.length > 0 && (
                       <section key={sectionName}>
-                        <h2 className="font-serif text-zinc-700 mb-12 tracking-wide uppercase">
+                        <h2 className="font-serif font-bold text-xl mb-12 tracking-wide uppercase">
                           Education
                         </h2>
                         <div className="space-y-12">
@@ -79,7 +81,7 @@ export default function Home() {
                   return (
                     publicationData.length > 0 && (
                       <section key={sectionName}>
-                        <h2 className="font-serif text-l mb-12 tracking-wide uppercase">
+                        <h2 className="font-serif font-bold text-xl mb-12 tracking-wide uppercase">
                           Publications
                         </h2>
                         <div className="space-y-12">
@@ -99,7 +101,7 @@ export default function Home() {
                   return (
                     experienceData.length > 0 && (
                       <section key={sectionName}>
-                        <h2 className="font-serif text-md mb-12 tracking-wide uppercase">
+                        <h2 className="font-serif font-bold text-xl mb-12 tracking-wide uppercase">
                           Experience
                         </h2>
                         <div className="space-y-12">
@@ -117,12 +119,27 @@ export default function Home() {
                   return (
                     portfolioData.length > 0 && (
                       <section key={sectionName}>
-                        <h2 className="font-serif text-md mb-12 tracking-wide uppercase">
-                          Portfolio
+                        <h2 className="font-serif font-bold text-xl mb-12 tracking-wide uppercase">
+                          Projects
                         </h2>
                         <div className="space-y-12">
                           {portfolioData.map((portfolio, index) => (
                             <PortfolioEntry key={index} portfolio={portfolio} />
+                          ))}
+                        </div>
+                      </section>
+                    )
+                  );
+                case Section.ResearchProjects:
+                  return (
+                    researchProjectsData.length > 0 && (
+                      <section key={sectionName}>
+                        <h2 className="font-serif font-bold text-xl mb-12 tracking-wide uppercase">
+                          Research Projects
+                        </h2>
+                        <div className="space-y-12">
+                          {researchProjectsData.map((researchProjects, index) => (
+                            <ResearchProjectsEntry key={index} researchProjects={researchProjects} />
                           ))}
                         </div>
                       </section>

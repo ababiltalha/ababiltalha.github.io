@@ -1,15 +1,15 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
-import { Portfolio } from "@/data/portfolio";
+import { ResearchProjects } from "@/data/research-projects";
 
-export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
+export function ResearchProjectsEntry({ researchProjects }: { researchProjects: ResearchProjects }) {
   return (
     <div className="flex flex-col sm:flex-row gap-6">
-      {portfolio.imageUrl && (
+      {researchProjects.imageUrl && (
         <div className="w-1/4 min-w-[160px] relative">
           <Image
-            src={portfolio.imageUrl}
-            alt={portfolio.title}
+            src={researchProjects.imageUrl}
+            alt={researchProjects.title}
             width={160}
             height={200}
             className="rounded-lg"
@@ -18,25 +18,25 @@ export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
       )}
       <div className="flex flex-col flex-1">
         <h3 className="font-serif text-md mb-3">
-          {portfolio.projectUrl ? (
+          {researchProjects.projectUrl ? (
             <a
-              href={portfolio.projectUrl}
+              href={researchProjects.projectUrl}
               className="group inline-flex items-center gap-2 hover:text-zinc-600 transition-colors duration-300"
             >
-              {portfolio.title}
+              {researchProjects.title}
               <ArrowUpRight
                 size={16}
                 className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
               />
             </a>
           ) : (
-            portfolio.title
+            researchProjects.title
           )}
         </h3>
 
-        {portfolio.technologies && (
+        {researchProjects.technologies && (
           <div className="flex gap-2 mb-4 flex-wrap">
-            {portfolio.technologies.map((tech, index) => (
+            {researchProjects.technologies.map((tech, index) => (
               <span
                 key={index}
                 className="text-xs text-zinc-600 px-2 py-1 bg-zinc-100 rounded-full"
@@ -48,9 +48,9 @@ export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
         )}
 
         <div className="flex gap-6">
-          {portfolio.projectUrl && (
+          {researchProjects.projectUrl && (
             <a
-              href={portfolio.projectUrl}
+              href={researchProjects.projectUrl}
               className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
             >
               <ArrowUpRight
@@ -60,9 +60,9 @@ export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
               <span className="tracking-wider uppercase">Project</span>
             </a>
           )}
-          {portfolio.codeUrl && (
+          {researchProjects.codeUrl && (
             <a
-              href={portfolio.codeUrl}
+              href={researchProjects.codeUrl}
               className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
             >
               <ArrowUpRight
@@ -72,21 +72,23 @@ export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
               <span className="tracking-wider uppercase">Code</span>
             </a>
           )}
-          {portfolio.videoUrl && (
-            <a
-              href={portfolio.videoUrl}
-              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
-            >
-              <ArrowUpRight
-                size={12}
-                className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
-              />
-              <span className="tracking-wider uppercase">Video</span>
-            </a>
-          )}
         </div>
+
+        {researchProjects.supervisors && (
+          <p className="text-sm text-zinc-600 leading-relaxed italic mt-2">
+            Supervisors: {researchProjects.supervisors.map((supervisor, index) => (
+              <>
+                <a href={researchProjects.supervisorLinks?.[index]} className="hover:text-zinc-600 hover:underline transition-colors" target="_blank" rel="noopener noreferrer">
+                  {supervisor}
+                </a>
+                {index < (researchProjects.supervisors?.length ?? 0) - 1 && ", "}
+              </>
+            ))}
+          </p>
+        )}
+
         <p className="text-sm text-zinc-600 mb-4 mt-4 italic">
-          {portfolio.description}
+          {researchProjects.description}
         </p>
       </div>
     </div>
