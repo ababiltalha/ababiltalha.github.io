@@ -13,6 +13,7 @@ import { portfolioData } from "@/data/portfolio";
 import { ResearchProjectsEntry } from "@/components/research-projects-entry";
 import { researchProjectsData } from "@/data/research-projects";
 import { sectionOrder, Section } from "@/data/section-order";
+import { Navbar } from "@/components/navbar";
 
 export default function Home() {
   return (
@@ -31,9 +32,15 @@ export default function Home() {
 
           {/* Right Column - Scrolling Content */}
           <div className="col-span-12 md:col-span-7 md:col-start-6 space-y-24">
+            {/* Navbar */}
+            <Navbar sections={sectionOrder} />
+            
             {/* About section is typically first */}
             {aboutMe.description && (
               <section>
+                <h2 className="font-serif font-bold text-xl mb-12 tracking-wide uppercase">
+                  About Me
+                </h2>
                 <p
                   className="font-serif text-sm leading-relaxed text-zinc-700 [&_a]:underline [&_a]:text-zinc-900 [&_a:hover]:text-zinc-600"
                   dangerouslySetInnerHTML={{ __html: aboutMe.description }}
@@ -48,7 +55,7 @@ export default function Home() {
                 case Section.News:
                   return (
                     newsData.length > 0 && (
-                      <section key={sectionName}>
+                      <section key={sectionName} id={sectionName} className="scroll-mt-28">
                         <h2 className="font-serif font-bold text-xl mb-12 tracking-wide uppercase">
                           News
                         </h2>
@@ -65,7 +72,7 @@ export default function Home() {
                 case Section.Education:
                   return (
                     educationData.length > 0 && (
-                      <section key={sectionName}>
+                      <section key={sectionName} id={sectionName} className="scroll-mt-28">
                         <h2 className="font-serif font-bold text-xl mb-12 tracking-wide uppercase">
                           Education
                         </h2>
@@ -80,7 +87,7 @@ export default function Home() {
                 case Section.Publication:
                   return (
                     publicationData.length > 0 && (
-                      <section key={sectionName}>
+                      <section key={sectionName} id={sectionName} className="scroll-mt-28">
                         <h2 className="font-serif font-bold text-xl mb-12 tracking-wide uppercase">
                           Publications
                         </h2>
@@ -100,7 +107,7 @@ export default function Home() {
                 case Section.Experience:
                   return (
                     experienceData.length > 0 && (
-                      <section key={sectionName}>
+                      <section key={sectionName} id={sectionName} className="scroll-mt-28">
                         <h2 className="font-serif font-bold text-xl mb-12 tracking-wide uppercase">
                           Experience
                         </h2>
@@ -118,7 +125,7 @@ export default function Home() {
                 case Section.Portfolio:
                   return (
                     portfolioData.length > 0 && (
-                      <section key={sectionName}>
+                      <section key={sectionName} id={sectionName} className="scroll-mt-28">
                         <h2 className="font-serif font-bold text-xl mb-12 tracking-wide uppercase">
                           Projects
                         </h2>
@@ -133,7 +140,7 @@ export default function Home() {
                 case Section.ResearchProjects:
                   return (
                     researchProjectsData.length > 0 && (
-                      <section key={sectionName}>
+                      <section key={sectionName} id={sectionName} className="scroll-mt-28">
                         <h2 className="font-serif font-bold text-xl mb-12 tracking-wide uppercase">
                           Research Projects
                         </h2>

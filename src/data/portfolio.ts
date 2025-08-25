@@ -66,7 +66,7 @@ export const portfolioData: Portfolio[] = [
     description:
       "Built a compiler from scratch including steps for creating a symbol table, building a lexical analyzer, semantic analyzer, and generating intermediate code.",
     technologies: ["Bison", "Flex", "Compiler"],
-    // imageUrl: 
+    imageUrl: "/assets/images/portfolio/compiler.webp",
     codeUrl: "https://github.com/ababiltalha/CSE310_compiler",
   },
 ];
