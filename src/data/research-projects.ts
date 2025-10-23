@@ -5,6 +5,7 @@ export interface ResearchProjects {
   imageUrl?: string;
   projectUrl?: string;
   codeUrl?: string;
+  paperUrl?: string;
   supervisors?: string[];
   supervisorLinks?: string[];
 }
@@ -46,11 +47,12 @@ export const researchProjectsData: ResearchProjects[] = [
     supervisors: ["Dr. A. B. M. Alim Al Islam"],
     supervisorLinks: ["https://scholar.google.com/citations?user=K-AIPzQAAAAJ&hl=en"],
     imageUrl: "/assets/images/research-projects/system-architecture-1.png",
+    paperUrl: "https://arxiv.org/abs/2510.16622",
   },
   {
     title: "NHT1071: A Traffic Image Dataset for Non lane-based and Heterogeneous Traffic for Adaptive Traffic Signal Scheduling",
     description:
-      "The Non-lane based Heterogeneous Traffic dataset NHT1071 was prepared with 1071 traffic images from different locations in Dhaka city, taken in various times of the day. The dataset was prepared to train the object detection model for vision-based traffic signaling systems. We labeled the dataset with the help of human annotators and trained object detection models with the help of the labeled dataset, the best of which was used in the traffic signaling system project above. [Manuscript in submission]",
+      "The Non-lane based Heterogeneous Traffic dataset NHT1071 was prepared with 1071 traffic images from different locations in Dhaka city, taken in various times of the day. The dataset was prepared to train the object detection model for vision-based traffic signaling systems. We labeled the dataset with the help of human annotators and trained object detection models with the help of the labeled dataset, the best of which was used in the traffic signaling system project above.",
     technologies: ["Traffic Image Dataset", "Object Detection", "Intelligent Traffic Signaling"],
     supervisors: ["Masfiqur Rahaman", "Dr. A. B. M. Alim Al Islam"],
     supervisorLinks: ["https://scholar.google.com/citations?user=kO1x10QAAAAJ&hl=en", "https://scholar.google.com/citations?user=K-AIPzQAAAAJ&hl=en"],

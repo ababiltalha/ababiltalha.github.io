@@ -17,22 +17,36 @@ export function ResearchProjectsEntry({ researchProjects }: { researchProjects: 
         </div>
       )}
       <div className="flex flex-col flex-1">
-        <h3 className="font-serif text-md mb-3">
-          {researchProjects.projectUrl ? (
+        <div className="flex items-center gap-4 mb-3">
+          <h3 className="font-serif text-md">
+            {researchProjects.projectUrl ? (
+              <a
+                href={researchProjects.projectUrl}
+                className="group inline-flex items-center gap-2 hover:text-zinc-600 transition-colors duration-300"
+              >
+                {researchProjects.title}
+                <ArrowUpRight
+                  size={16}
+                  className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
+                />
+              </a>
+            ) : (
+              researchProjects.title
+            )}
+          </h3>
+          {researchProjects.paperUrl && (
             <a
-              href={researchProjects.projectUrl}
-              className="group inline-flex items-center gap-2 hover:text-zinc-600 transition-colors duration-300"
+              href={researchProjects.paperUrl}
+              className="group inline-flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-300"
             >
-              {researchProjects.title}
               <ArrowUpRight
-                size={16}
+                size={12}
                 className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
               />
+              <span className="tracking-wider uppercase">Paper</span>
             </a>
-          ) : (
-            researchProjects.title
           )}
-        </h3>
+        </div>
 
         {researchProjects.technologies && (
           <div className="flex gap-2 mb-4 flex-wrap">
