@@ -22,7 +22,7 @@ export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
           {portfolio.projectUrl ? (
             <a
               href={portfolio.projectUrl}
-              className="group inline-flex items-center gap-2 hover:text-zinc-600 transition-colors duration-300"
+              className="group inline-flex items-center gap-2 hover:text-zinc-600 transition-colors duration-300 underline underline-offset-4"
             >
               {portfolio.title}
               <ArrowUpRight
@@ -52,7 +52,7 @@ export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
           {portfolio.projectUrl && (
             <a
               href={portfolio.projectUrl}
-              className="group inline-flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-300"
+              className="group inline-flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-300 underline underline-offset-4"
             >
               <ArrowUpRight
                 size={12}
@@ -64,7 +64,7 @@ export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
           {portfolio.codeUrl && (
             <a
               href={portfolio.codeUrl}
-              className="group inline-flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-300"
+              className="group inline-flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-300 underline underline-offset-4"
             >
               <ArrowUpRight
                 size={12}
@@ -76,7 +76,7 @@ export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
           {portfolio.videoUrl && (
             <a
               href={portfolio.videoUrl}
-              className="group inline-flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-300"
+              className="group inline-flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-300 underline underline-offset-4"
             >
               <ArrowUpRight
                 size={12}
