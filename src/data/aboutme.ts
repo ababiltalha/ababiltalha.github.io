@@ -27,7 +27,7 @@ export const aboutMe: AboutMe = {
   email: "kaziababilazamtalha@gmail.com",
   imageUrl:
     "/assets/images/photo.png",
-  // googleScholarUrl: "https://scholar.google.com/citations?user=EMPTY",
+  googleScholarUrl: "https://scholar.google.com/citations?user=bKrokCIAAAAJ",
   githubUsername: "ababiltalha",
   linkedinUsername: "kazi-ababil-azam",
   twitterUsername: "ababiltalha",
