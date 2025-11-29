@@ -25,8 +25,8 @@ export const researchProjectsData: ResearchProjects[] = [
   {
     title: "Investigating Data Privacy in AI Chatbots",
     description:
-      "Sensitive AI chatbots are becoming increasingly popular, but they raise significant concerns based on usage patterns. In this project, we aim to investigate the data privacy of these chatbots by analyzing posts about using these chatbots on the internet. We are collecting anonymous posts related to romantic chatbots and AI partners from Reddit, which we are analyzing to understand the shared data and concerns regarding the privacy of these chatbots.",
-    technologies: ["Data Privacy", "NLP", "Human-AI Interaction"],
+      "Romantic and emotional AI chatbots are becoming increasingly popular, but they raise significant concerns regarding data privacy and security. In this project, we aim to investigate the data privacy of these chatbots by analyzing posts about these applications on Reddit. We have collected posts related to romantic chatbots and AI partners from related subreddits, which we are thematically analyzing to understand the shared data and concerns regarding privacy.",
+    technologies: ["Data Privacy", "Human-AI Interaction", "Qualitative Analysis", "Data Scraping"],
     supervisors: ["Dr. Dipto Das", "Dr. Imtiaz Karim"],
     supervisorLinks: ["https://scholar.google.com/citations?hl=en&user=yRHRA4QAAAAJ", "https://scholar.google.com/citations?user=YqQRjfgAAAAJ&hl=en"],
     imageUrl: "/assets/images/research-projects/methodology-1.png",
@@ -34,10 +34,10 @@ export const researchProjectsData: ResearchProjects[] = [
   {
     title: "Pedestrian Trajectory Categorization and Analysis in AV Simulation",
     description:
-      "In simulation-based testing of autonomous vehicles, it is essential that simulation models generate diverse pedestrian trajectories and cover a wide range of real-life possible situations. As a result, there is a need for metrics to assess whether the synthetic trajectories produced by simulation models truly represent all kinds of real-world trajectories. To address this gap in literature, we propose formulating such metrics by analyzing real-world pedestrian trajectory datasets. Currently, we are categorizing the trajectories through finding structures based on different algorithms, including human annotation over the trajectories.",
-    technologies: ["AV", "Data Analysis", "Visualization"],
-    supervisors: ["Dr. Golam Md. Muktadir", "Dr. A. B. M. Alim Al Islam", "Dr. Mahmuda Naznin"],
-    supervisorLinks: ["https://scholar.google.com/citations?user=RDa4TOgAAAAJ&hl=en", "https://scholar.google.com/citations?user=K-AIPzQAAAAJ&hl=en", "https://scholar.google.com/citations?user=dJx58AQAAAAJ&hl=en"],
+      "In simulation-based testing of autonomous vehicles, it is essential that simulation models generate diverse pedestrian trajectories and cover a wide range of real-life possible situations. As a result, there is a need for metrics to assess whether the synthetic trajectories produced by simulation models truly represent all kinds of real-world trajectories. To address this gap in literature, we propose formulating such metrics by analyzing real-world pedestrian trajectory datasets. Currently, we are categorizing the trajectories through finding structures based on different algorithms, including human annotation over the trajectories. We are conducting an online survey, asking participants to annotate the trajectories, compare annotations, and reconstruct the trajectories based on the annotations.",
+    technologies: ["AV", "Data Analysis", "Visualization", "Online Survey"],
+    supervisors: ["Dr. Golam Md. Muktadir", "Dr. A. B. M. Alim Al Islam", "Dr. Fahim Hasan Khan"],
+    supervisorLinks: ["https://scholar.google.com/citations?user=RDa4TOgAAAAJ&hl=en", "https://scholar.google.com/citations?user=K-AIPzQAAAAJ&hl=en", "https://scholar.google.com/citations?hl=en&user=zkUX0q0AAAAJ"],
     imageUrl: "/assets/images/research-projects/annotation.png",
   },
   {
