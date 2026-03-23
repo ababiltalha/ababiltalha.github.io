@@ -5,14 +5,16 @@ export function ExperienceEntry({ experience }: { experience: Experience }) {
   return (
     <div className="flex flex-col sm:flex-row gap-6">
       {experience.logoUrl && (
-        <div className="w-1/4 min-w-[160px] relative">
-          <Image
-            src={experience.logoUrl}
-            alt={`${experience.company} logo`}
-            width={160}
-            height={200}
-            className="rounded-lg object-contain"
-          />
+        <div className="w-1/4 min-w-[80px] relative flex justify-center">
+          <div className="h-20 w-20 rounded-xl overflow-hidden bg-white">
+            <Image
+              src={experience.logoUrl}
+              alt={`${experience.company} logo`}
+              width={80}
+              height={80}
+              className="h-full w-full object-contain"
+            />
+          </div>
         </div>
       )}
       <div className="flex flex-col flex-1 min-w-0">

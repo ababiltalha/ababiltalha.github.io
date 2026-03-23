@@ -15,7 +15,7 @@ export const researchProjectsData: ResearchProjects[] = [
   {
     title: "Towards Intelligent Traffic Signaling in Dhaka City Based on Vehicle Detection and Congestion Optimization",
     description:
-      "This was my undergraduate thesis project under the supervision of Dr. A. B. M. Alim Al Islam, where we proposed a system architecture for an intelligent traffic signaling system suited for the non-lane based, heterogeneous traffic in Dhaka city. The single-intersection traffic signaling system uses object detection and multi-objective optimization on a Raspberry Pi. The devised system architecture was developed into a prototype, which was then tested at a five-road intersection in Dhaka, Bangladesh. We have worked on real-time video processing, object detection in low-resource environments, and multi-objective optimization algorithms. My personal contributions to the project include the dataset preparation to train the model, the evaluation and selection of the object detection model, the overall integration of the cyber-physical system, and the testing and evaluation of the system at the intersection. [Manuscript on arXiv]",
+      "This was my undergraduate thesis project, where we proposed a system architecture for an intelligent traffic signaling system suited for the non-lane based, heterogeneous traffic in Dhaka city. The single-intersection traffic signaling system uses object detection and multi-objective optimization on a Raspberry Pi. The devised system architecture was developed into a prototype, which was then tested at a five-road intersection in Dhaka, Bangladesh.",
     technologies: ["Intelligent Traffic Signaling", "Real-Time Video Processing", "Object Detection", "Multi-Objective Optimization", "Cyber-Physical Systems"],
     supervisors: ["Dr. A. B. M. Alim Al Islam"],
     supervisorLinks: ["https://scholar.google.com/citations?user=K-AIPzQAAAAJ&hl=en"],
@@ -23,13 +23,13 @@ export const researchProjectsData: ResearchProjects[] = [
     paperUrl: "https://arxiv.org/abs/2510.16622",
   },
   {
-    title: "Investigating Data Privacy in AI Chatbots",
+    title: "Tracing Users' Privacy Concerns Across the Lifecycle of a Romantic AI Companion",
     description:
-      "Romantic and emotional AI chatbots are becoming increasingly popular, but they raise significant concerns regarding data privacy and security. In this project, we aim to investigate the data privacy of these chatbots by analyzing posts about these applications on Reddit. We have collected posts related to romantic chatbots and AI partners from related subreddits, which we are thematically analyzing to understand the shared data and concerns regarding privacy.",
-    technologies: ["Data Privacy", "Human-AI Interaction", "Qualitative Analysis", "Data Scraping"],
+      "As people turn to Romantic AI platforms for intimacy, comfort, and emotionally significant interaction, they often disclose highly sensitive information. Yet the privacy implications of such disclosure remain poorly understood in platforms shaped by persistence, intimacy, and opaque data practices. We examine public Reddit discussions about privacy in romantic AI chatbot ecosystems through a lifecycle lens. Analyzing posts from relevant subreddits collected over one year, we identify four recurring patterns and show that privacy in romantic AI is best understood as an evolving socio-technical governance problem spanning access, disclosure, interpretation, retention, and exit.",
+    technologies: ["Privacy Frameworks", "Human-AI Interaction", "Qualitative Analysis", "Data Scraping"],
     supervisors: ["Dr. Dipto Das", "Dr. Imtiaz Karim"],
     supervisorLinks: ["https://scholar.google.com/citations?hl=en&user=yRHRA4QAAAAJ", "https://scholar.google.com/citations?user=YqQRjfgAAAAJ&hl=en"],
-    imageUrl: "/assets/images/research-projects/methodology-1.png",
+    imageUrl: "/assets/images/research-projects/methodology-1.jpg",
   },
   {
     title: "Pedestrian Trajectory Categorization and Analysis in AV Simulation",
@@ -39,15 +39,6 @@ export const researchProjectsData: ResearchProjects[] = [
     supervisors: ["Dr. Golam Md. Muktadir", "Dr. A. B. M. Alim Al Islam", "Dr. Fahim Hasan Khan"],
     supervisorLinks: ["https://scholar.google.com/citations?user=RDa4TOgAAAAJ&hl=en", "https://scholar.google.com/citations?user=K-AIPzQAAAAJ&hl=en", "https://scholar.google.com/citations?hl=en&user=zkUX0q0AAAAJ"],
     imageUrl: "/assets/images/research-projects/annotation.png",
-  },
-  {
-    title: "Evaluating Reasoning in Large Language Models",
-    description:
-      "Large language models (LLMs) have shown impressive performance in various tasks, the newer versions with reasoning capabilities are even more impressive. But are these models really capable of reasoning through a complicated problem and finding the solution? In this project, we are challenging reasoning and regular LLMs to solve different complex problems which require logical reasoning and perceptional skills.",
-    technologies: ["LLMs", "Reasoning", "CoT"],
-    supervisors: ["Dr. Golam Md Muktadir"],
-    supervisorLinks: ["https://scholar.google.com/citations?user=RDa4TOgAAAAJ&hl=en"],
-    imageUrl: "/assets/images/research-projects/performance.png",
   },
   {
     title: "NHT1071: A Traffic Image Dataset for Non lane-based and Heterogeneous Traffic for Adaptive Traffic Signal Scheduling",

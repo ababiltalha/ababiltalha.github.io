@@ -8,14 +8,16 @@ export function EducationEntry({ education }: { education: Education }) {
   return (
     <div className="flex flex-col sm:flex-row gap-6">
       {education.logoUrl && (
-        <div className="w-1/4 min-w-[160px] relative">
-          <Image
-            src={education.logoUrl}
-            alt={`${education.institution} logo`}
-            width={160}
-            height={200}
-            className="rounded-lg object-contain"
-          />
+        <div className="w-1/4 min-w-[80px] relative flex justify-center">
+          <div className="h-20 w-20 rounded-xl overflow-hidden">
+            <Image
+              src={education.logoUrl}
+              alt={`${education.institution} logo`}
+              width={80}
+              height={80}
+              className="h-full w-full object-contain"
+            />
+          </div>
         </div>
       )}
       <div className="flex flex-col flex-1 min-w-0">
@@ -24,13 +26,14 @@ export function EducationEntry({ education }: { education: Education }) {
         <div className="mt-2 space-y-2">
           {education.degree.map((degree, index) => (
             <div key={`${degree}-${index}`} className="text-sm text-zinc-600 leading-relaxed">
-              <p>{degree}</p>
-              {hasCgpa && education.cgpa?.[index] && (
-                <p className="mt-1 italic">CGPA: {education.cgpa[index]}</p>
-              )}
-              {hasGpa && education.gpa?.[index] && (
-                <p className="mt-1 italic">GPA: {education.gpa[index]}</p>
-              )}
+              <p>{degree}<br />
+                {hasCgpa && education.cgpa?.[index] && (
+                  <span>CGPA: {education.cgpa[index]}</span>
+                )}
+                {hasGpa && education.gpa?.[index] && (
+                  <span>GPA: {education.gpa[index]}</span>
+                )}
+              </p>
             </div>
           ))}
         </div>
