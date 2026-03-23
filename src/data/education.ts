@@ -1,18 +1,26 @@
 export interface Education {
   year: string;
   institution: string;
-  degree: string;
-  cgpa?: string;
-  notableCourses?: string;
+  degree: string[];
+  cgpa?: string[];
+  logoUrl?: string;
+  gpa?: string[];
 }
 
 export const educationData: Education[] = [
   // If you don't want to show education, just make the array empty.
   {
-    year: "2019—2024",
-    institution: "Bangladesh University of Engineering and Technology",
-    degree: "B.Sc. in Computer Science and Engineering (CSE)",
-    cgpa: "3.67/4.00",
-    notableCourses: "Machine Learning, Microprocessor Microcontroller & Embedded Systems, Compiler, Computer Networking, Software Engineering, Computer Architecture, Operating System, Simulation & Modelling, Computer Security, Computer Graphics, Artificial Intelligence"
+    year: "2024",
+    institution: "Bangladesh University of Engineering and Technology (BUET)",
+    logoUrl: "/assets/logos/buet.png",
+    degree: ["B.Sc. in Computer Science and Engineering (CSE)"],
+    cgpa: ["3.67/4.00"],
+  },
+  {
+    year: "2011 - 2018",
+    institution: "Military Collegiate School Khulna (MCSK)",
+    logoUrl: "/assets/logos/mcsk.jpeg",
+    degree: ["Higher Secondary Certificate (HSC)", "Secondary School Certificate (SSC)"],
+    gpa: ["5.00/5.00", "5.00/5.00"],
   },
 ];

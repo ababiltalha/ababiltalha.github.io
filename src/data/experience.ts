@@ -7,6 +7,7 @@ export interface Experience {
   manager?: string;
   companyUrl?: string;
   location?: string;
+  logoUrl?: string;
 }
 
 export const experienceData: Experience[] = [
@@ -14,8 +15,9 @@ export const experienceData: Experience[] = [
     date: "Jun 2024 - Present",
     title: "Software Engineer I",
     company: "Synesis IT PLC",
+    logoUrl: "/assets/logos/synesis.png",
     description:
-      "Worked as a part of the Convay team at Synesis IT PLC, developing and maintaining the desktop application for Convay, a video conferencing web application, and migrating features from web version for seamless experience. Most notable contributions include the implementation and improvement of the annotation feature in the application.",
+      "Working as a part of the Convay team at Synesis IT PLC, developing and maintaining the desktop application for Convay, a video conferencing web application with collaborative workspace features. Most notable contributions include the implementation and maintenance of the annotation feature in the application.",
     // advisor: "Peter Wang",
     companyUrl: "https://synesisitltd.com",
     location: "Dhaka, Bangladesh",
@@ -24,6 +26,7 @@ export const experienceData: Experience[] = [
     date: "May 2023 - Jun 2023",
     title: "Project Intern",
     company: "ERA InfoTech Limited",
+    logoUrl: "/assets/logos/eil.jpg",
     description:
       "Worked on a project where we analyzed real-life business data using clustering methods enhanced by natural language processing techniques.",
     // manager: "Elise Brown",
