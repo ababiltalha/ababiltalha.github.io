@@ -30,6 +30,7 @@ export const researchProjectsData: ResearchProjects[] = [
     supervisors: ["Dr. Dipto Das", "Dr. Imtiaz Karim"],
     supervisorLinks: ["https://scholar.google.com/citations?hl=en&user=yRHRA4QAAAAJ", "https://scholar.google.com/citations?user=YqQRjfgAAAAJ&hl=en"],
     imageUrl: "/assets/images/research-projects/methodology-1.jpg",
+    paperUrl: "https://arxiv.org/abs/2603.21106",
   },
   {
     title: "Pedestrian Trajectory Categorization and Analysis in AV Simulation",
