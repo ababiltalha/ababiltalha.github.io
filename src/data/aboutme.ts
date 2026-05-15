@@ -23,7 +23,7 @@ export const aboutMe: AboutMe = {
   institution: "Synesis IT PLC, Dhaka, BD",
   // Note that links work in the description
   description:
-    "Hi, I am Ababil (pronounced A-ba-beel), a CSE graduate from Dhaka, Bangladesh. I graduated in July 2024, earning my B.Sc. degree from Bangladesh University of Engineering and Technology (BUET). Since then, I have been working as a Software Engineer I at <a href='https://synesisitltd.com/'>Synesis IT PLC</a>, Dhaka, Bangladesh, assigned to the <a href='https://convay.com/'>Convay</a> team. Currently, I am <b>looking for Ph.D. opportunities</b> in the broad field of autonomous systems and security. <br><br>Outside of academic and professional life, I enjoy watching and playing all kinds of sports, but mostly football (the European kind). I am fond of pop culture in general, and am an avid rewatcher of TV shows and anime. <br>",
+    "Hi, I am Ababil (pronounced A-ba-beel), and I am from Dhaka, Bangladesh. I completed my B.Sc. in Computer Science and Engineering back in July 2024 from Bangladesh University of Engineering and Technology (BUET). Since then, I have been working as a Software Engineer I at <a href='https://synesisitltd.com/'>Synesis IT PLC</a>, Dhaka, Bangladesh, assigned to the <a href='https://convay.com/'>Convay</a> team. <s>Currently, I am looking for Ph.D. opportunities in the broad field of systems and security.</s> <b>I am excited to share that I will be joining the lab of Dr. Yicheng Zhang at George Mason University, Virginia as an incoming Ph.D. student starting Fall 2026!</b> <br><br>My research interests lie in the broad field of systems security. Outside of research and work, I enjoy watching and playing all kinds of sports, but mostly football (the European kind). I enjoy pop culture in general and often rewatch TV shows and anime. <br>",
   email: "kaziababilazamtalha@gmail.com",
   imageUrl:
     "/assets/images/photo.png",
@@ -34,6 +34,6 @@ export const aboutMe: AboutMe = {
   // blogUrl: "https://",
   cvUrl: "/assets/pdf/cv.pdf",
   institutionUrl: "https://synesisitltd.com/",
-  altName: "Software Engineer, Research Enthusiast, Ph.D. Applicant",
+  altName: "",
   secretDescription: "Cristiano Ronaldo dos Santos Aveiro is the greatest footballer of all time.",
 };
