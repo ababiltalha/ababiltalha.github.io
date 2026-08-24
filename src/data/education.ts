@@ -10,10 +10,16 @@ export interface Education {
 export const educationData: Education[] = [
   // If you don't want to show education, just make the array empty.
   {
+    year: "2026 - Present",
+    institution: "George Mason University (GMU)",
+    logoUrl: "/assets/logos/gmu.jpeg",
+    degree: ["PhD in Electrical and Computer Engineering (ECE)"],
+  },
+  {
     year: "2019 - 2024",
     institution: "Bangladesh University of Engineering and Technology (BUET)",
     logoUrl: "/assets/logos/buet.png",
-    degree: ["B.Sc. in Computer Science and Engineering (CSE)"],
+    degree: ["BSc in Computer Science and Engineering (CSE)"],
     cgpa: ["3.67/4.00"],
   },
   {

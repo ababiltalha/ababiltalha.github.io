@@ -12,7 +12,17 @@ export interface Experience {
 
 export const experienceData: Experience[] = [
   {
-    date: "Jun 2024 - Present",
+    date: "Aug 2026 - Present",
+    title: "Graduate Research Assistant",
+    company: "George Mason University",
+    logoUrl: "/assets/logos/gmu.jpeg",
+    description:
+      "Working on hardware (GPU) security at the MASS Lab (Mason Augmented/Virtual Reality and System Security Lab), led by Dr. Yicheng Zhang.",
+    companyUrl: "https://www.gmu.edu/",
+    location: "Fairfax, Virginia, USA",
+  },
+  {
+    date: "Jun 2024 - Aug 2026",
     title: "Software Engineer I",
     company: "Synesis IT PLC",
     logoUrl: "/assets/logos/synesis.png",

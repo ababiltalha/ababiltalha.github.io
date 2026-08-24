@@ -13,4 +13,9 @@ export const newsData: News[] = [
     description: "Our work on causal discovery in time series data has been accepted at ICML 2024.",
     link: "https://icml.cc/",
   }*/
+ {
+    date: "August 2026",
+    title: "Started my PhD at George Mason University!",
+    description: "I have started pursuing my PhD in ECE at George Mason University.",
+  }
 ];
