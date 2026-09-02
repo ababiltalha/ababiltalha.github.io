@@ -17,7 +17,7 @@ export const experienceData: Experience[] = [
     company: "George Mason University",
     logoUrl: "/assets/logos/gmu.jpeg",
     description:
-      "Joined the MASS Lab (Mason Augmented/Virtual Reality and System Security Lab), led by Dr. Yicheng Zhang.",
+      "Working on hardware and GPU security in the MASS Lab (Mason Augmented/Virtual Reality and System Security Lab), led by Dr. Yicheng Zhang.",
     companyUrl: "https://www.gmu.edu/",
     location: "Fairfax, Virginia, USA",
   },
